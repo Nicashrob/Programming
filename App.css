@@ -96,14 +96,8 @@ p {
     align-content: center;
 
 }
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
+
 .crazy {
     position:absolute ;
     background-color: white;
