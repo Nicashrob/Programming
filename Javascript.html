@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>
+        Lessons
+    </title>
+    <link rel="stylesheet" href="App.css" />
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <a href="Images.html">Images</a>
+        </li>
+        <li>
+            <a href="Forms.html">Forms</a>
+        </li>
+        <li>
+            <a href="divs.html">Divs</a>
+        </li>
+        <li>
+            <a href="Javascript.html">Javascript</a>
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <a onclick="popupmyname()">
+                Show my name pop-up
+            </a>
+        </li>
+        <li>
+            <a onclick="logstuff()">
+                Log some stuff
+            </a>
+        </li>
+        <li>
+            <a onclick="basicmath()">
+                Do basic math
+            </a>
+        </li>
+        <li>
+            <p onclick="confuseme()" id="imconfused">
+                confuse me
+            </p>
+        </li>
+    </ol>
+
+    <script>
+        function popupmyname() {
+            alert('Nicole');
+        }
+
+        function logstuff() {
+            console.log('i am a string');
+        }
+
+        function basicmath() {
+            let myapples = 5;
+            let yourapples = 10;
+
+            addtwonumbers(myapples, yourapples);
+        }
+
+        function addtwonumbers(numberone, numbertwo) {
+            let addednumbers = numberone + numbertwo;
+
+            console.log(addednumbers);
+
+            alert(addednumbers);
+
+        }
+
+        function confuseme() {
+            //alert( document.getElementById('imconfused').innerHTML)
+            document.getElementById('imconfused').innerHTML='what have i done';
+            document.getElementById('imconfused').style.color='green';
+        }
+    </script>
+</body>
+
+</html>
